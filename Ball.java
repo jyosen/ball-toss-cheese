@@ -80,14 +80,7 @@ public class Ball
 		time = 2*velocity*Math.sin(Math.toRadians(angle))/g;
 		return time;
 	}
-	boolean clearTarget()
-	{
-		if (dist > target)
-		{
-			return true;
-		}
-		return false;
-	}
+	
 	
 }
 
