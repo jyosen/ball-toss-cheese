@@ -14,6 +14,10 @@ import javax.swing.JOptionPane;
  */
 public class TossViewer 
 {
+	public static final String PIKL = "Pickle Man";
+	public static final String TTN = "Turtonne";
+	public static final String CMN = "C-Moon";
+	public static final String WFL = "Waffle King";
 
 	public static void main(String[] args)
 	{
@@ -22,10 +26,18 @@ public class TossViewer
 		
 		frame.setLayout(new FlowLayout());
 		
-		Button pickle = new Button("Pickle Man");
-		Button turtle = new Button("Turtonne");
-		Button moon = new Button("C-Moon");
-		Button king = new Button("Waffle King");
+		Button pickle = new Button(PIKL);
+		Button turtle = new Button(TTN);
+		Button moon = new Button(CMN);
+		Button king = new Button(WFL;
+		
+		class ThrowerListener implements ActionListener
+		{
+			public void actionPerformed(ActionEvent event)
+			{
+				Thrower throw = new Thrower(event.getActionCommand());
+			}	
+		}	
 		
 		frame.setBounds(400, 400, 800, 600);
 		
